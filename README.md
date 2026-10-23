@@ -12,6 +12,11 @@ while cycle = it needs a condition to start and to stop otherwise it will go ind
 .value = in a dictionary this is the value that a key holds
 .item = this will pair up both the key and the value
 
+This is the imporvement
+
+This is the second commit
+
+
 
 
 # Things ive yet to work on 
