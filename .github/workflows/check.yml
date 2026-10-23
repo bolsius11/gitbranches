@@ -1,0 +1,22 @@
+name:
+  check cheat sheet
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check if README.md exists and is not empty
+        run: |
+          if [ ! -s "README.md" ]; then
+            echo "Error: README.md is missing or empty!"
+            exit 1
+          else
+            echo "Success: README.md exists and is not empty."
+          fi
